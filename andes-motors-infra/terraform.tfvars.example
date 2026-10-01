@@ -1,0 +1,8 @@
+# Copia este archivo como "terraform.tfvars" y completa tus valores reales
+# NO subas terraform.tfvars a un repositorio público si contiene datos sensibles
+
+aws_region       = "us-east-1"
+instance_type    = "t2.micro"
+key_name         = "mi-keypair"        # Debe existir previamente en tu cuenta AWS
+allowed_ssh_cidr = "0.0.0.0/0"         # Idealmente cámbialo por tu IP pública, ej: "190.12.34.56/32"
+instance_name    = "andes-motors-monitoreo"
